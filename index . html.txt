@@ -1,0 +1,57 @@
+App Name: Urdu Result Card Generator
+
+?? Vision & Goals:
+- Experience: Simple, Urdu-friendly, elegant for teachers & tuition centers.
+- Goal: Automate professional student result card generation with PDF download.
+- Devices: Mobile-first responsive (Tailwind CSS).
+- Stack: HTML5 + CSS3 + JS only (no backend needed).
+
+?? Major Sections:
+
+?? Section 1: Student Info Input Form
+- Fields: Student Name, Class, Roll No, School/Institute Name, Logo Upload, Photo Upload (optional).
+- Add Subject button: Dynamic input for Subject Name, Total Marks, Obtained Marks.
+- Dropdown: Theme Select ("Blue", "Urdu Classic", "Black & White")
+- Button: "Calculate Result"
+
+?? Section 2: Result Card Display (Live Preview)
+- Shows all entered data in a professional layout
+- Auto-grade generation:
+   • 90%+ ? A+
+   • 80-89% ? A
+   • 70-79% ? B
+   • 60-69% ? C
+   • 50-59% ? D
+   • <50% ? F
+- Auto total marks and percentage
+- School Logo & Date
+- Teacher Signature area
+- Urdu font (Noto Nastaliq Urdu)
+
+?? Section 3: PDF Generation
+- Button: “Generate PDF”
+- Use: jsPDF + html2canvas to capture card and download
+
+?? Features:
+- Mobile Responsive using Tailwind CSS
+- Dynamic Subject Addition (with remove option)
+- RTL (Right-to-Left) Urdu layout
+- Error Handling: If fields missing, show warning in Urdu
+- Save previous entries (localStorage optional)
+
+?? Visual Notes:
+- Soft border radius
+- Drop shadows on result card
+- Theme-based color classes
+- Optional Night Mode toggle (dark theme)
+
+?? Flow:
+1. User fills student & subject data
+2. Presses "Calculate" ? sees result preview
+3. Presses “Generate PDF” ? downloads as result_card.pdf
+
+?? Output:
+- One single HTML file including all CSS & JS
+- All libraries via CDN (TailwindCSS, jsPDF, html2canvas)
+- Urdu support, clean, export-ready.
+
